@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objetos en Javascript</title>
+	<meta charset='utf-8'>
+</head>
+<body>
+	<script type='text/javascript'>
+		var gato = new Gato('Bigotes');	
+		var gato2 = new Gato('Pelusa');
+
+		function Gato(nombre){
+			this.nombre = nombre;
+			this.hambre = function(){
+				alert(this.nombre +' quiere tu comida');
+			};
+		}
+		gato2.hambre();
+	</script>
+</body>
+</html>

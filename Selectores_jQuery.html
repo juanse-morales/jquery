@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Selectores</title>
+  <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+  <script>
+    $(document).on('ready',function(){
+      // $('div').css({ 'background-color':'#000' });
+      // $('div.miDiv').css({ 'background-color':'#000' });
+      // $('div.miDiv article p').text("Probando 1 2 3");
+      $('#parrafoUno, #parrafoDos, span').text("Probando 1 2 3");
+    });
+  </script>
+</head>
+<body>
+  <div class="miDiv">
+    <article>
+      <p id="parrafoUno">Hola Jquery</p>
+    </article>    
+  </div>
+  <div>
+    <article>
+      <p id="parrafoDos">Y el curso de codigoFacilito</p>
+    </article>
+  </div>
+  <span>Mucho gusto el rayo</span>
+</body>
+</html>

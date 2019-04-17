@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Selectores Parte 2</title>
+  <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+  <script>
+
+    var seleccion;
+    $(document).on('ready',function(){
+      seleccion = $('.ejem1');
+      if(seleccion.length){
+        console.log('Existen: '+seleccion.length);
+      }
+      else{
+        console.log('No existe el elemento seleccionado '+seleccion.length);
+      }
+
+      //seleccion.not('.cl1').text('Este elemento no tiene la clase cl1');
+
+      //seleccion.has('p').text('Este elemento tiene un <p> en su contenido');
+
+      $('li').first().html('<strong>Soy el elemento 1</strong>')
+      $('li').eq(2).text('Soy el elemento numero 3');
+    });
+  </script>
+</head>
+<body>
+  <div class="ejem1 cl1">
+    <p></p>
+  </div>
+  <div class="ejem1">
+    <span></span>
+  </div>
+  <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</body>
+</html>

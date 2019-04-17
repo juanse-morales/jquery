@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>First Steps</title>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript">
+    /* 
+    forma 1
+    $(document).ready(function(){
+
+    })
+    
+    forma 2
+    $(document).on('ready',function(){
+
+    })
+
+    forma 3
+    $(function(){
+
+    });
+    */
+
+    $(document).ready(function(){
+      $('#prueba').text('<p>Hola mundo</p>');
+      $('.prueba').html('<strong>Estoy usando jQuery</strong>');
+    });
+
+    $(function(){
+      $('#prueba2').text('<p>Hola mundo</p>');
+      $('.prueba2').html('<strong>Estoy usando jQuery</strong>');
+    });
+  </script>
+
+</head>
+<body>
+  <div id="prueba"></div>
+  <div class="prueba"></div>
+  
+  <div id="prueba2"></div>
+  <div class="prueba2"></div>
+</body>
+</html>

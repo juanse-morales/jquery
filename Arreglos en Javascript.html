@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Curso jQuery: Ciclos</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		var arreglo = new Array();
+
+		arreglo.push(3);
+		arreglo.push('Hola mundo !');
+		arreglo.push(48.3);
+		arreglo.push('Bendiciones, a por la Paz');
+
+		arreglo[1] = 58;
+
+		console.log(arreglo[1]);
+
+		var arreglo2 = [4,'Vida',26,'Alegría'];
+		var arreglo3 = [[1,2,3],['a','b','c'],567,'Amor'];
+
+		for(f=0;f<arreglo3.length;f++){
+			for(i=0;i<arreglo3[f].length;i++){
+				console.log(arreglo3[f][i]);
+			}
+		}
+
+		var cadena = arreglo3[1].join('');
+		console.log(cadena);
+
+		var cadena2 = 'Dios es amor';
+		var arreglo4 = cadena2.split(' ');
+		console.log(arreglo4[2]);
+	</script>
+</body>
+</html>
