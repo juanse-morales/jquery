@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Clases CSS jQuery</title>
+  <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+  <style type="text/css">
+    .test{
+      background-color: red;
+    }
+  </style>
+  <script type="text/javascript">
+    $(document).on("ready",function(){
+      $(document).on("click",function(){
+        //$("#test").addClass("test");
+        //$("#test").removeClass("test");
+        $("#test").toggleClass("test");
+        if($("#test").hasClass("test")){
+          $("#test").text("Hey! Color: rojo");
+        }else{
+          $("#test").text("Hey! No color rojo");
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <div id="test"> Click on me
+  </div>
+</body>
+</html>
