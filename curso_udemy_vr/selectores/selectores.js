@@ -27,10 +27,10 @@ jQuery(document).ready(function(){
   var parrafos = $('p').css('cursor','pointer');
 
   parrafos.click(function(){
-    if($(this).hasClass("zebra")){
-      $(this).removeClass("zebra"); // Método que elimina una clase al elemento
+    if($(this).hasClass("zebra")){ // Método para comprobar una clase.
+      $(this).removeClass("zebra"); // Método que elimina una clase al elemento.
     }else{
-      $(this).addClass("zebra"); // Método que añade una clase al elemento
+      $(this).addClass("zebra"); // Método que añade una clase al elemento.
     }
   });
 
@@ -42,4 +42,16 @@ jQuery(document).ready(function(){
 
   // Otros
   $('p,a').addClass('margen-superior');
+
+  // Método FIND: permite buscar un elemento en el árbol DOM donde desconozco su ubicación.
+  var busqueda = $('#caja').find('.resaltado');
+  console.log(busqueda);
+  var busqueda2 = $('#caja .resaltado');
+  console.log(busqueda2);
+  
+  // Método PARENT: permite ubicarse en el elemento padre superior.
+  var busqueda3 = $('#caja .resaltado').eq(0).parent().parent().parent().find('[title="Google"]');
+  console.log(busqueda3);
+  var busqueda4 = $('#caja .resaltado').parent().parent().parent().find('[title="Google"]');
+  console.log(busqueda4);
 });
